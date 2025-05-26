@@ -15,6 +15,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 @EntityScan(basePackages = {"com.entity"})
 @EnableJpaRepositories(basePackages = {"com.repository"})
 @EnableFeignClients(basePackages = {"com.feignclients"})
+//@EnableEurekaClient deprecated removed
 public class StudentServiceApplication {
 
 	@Value("${address.service.url}")
